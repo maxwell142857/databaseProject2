@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Find books and their copies</title>
+    <%- include('./partials/css.ejs') %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include("./partials/navBar.ejs") %>
+      <h1>Find all copies of this book</h1>
+
+      <%- include("./partials/errMsg.ejs") %>
+
+      <div class="mb-4">
+        <a href="/titles/create" class="btn btn-primary btn-sm">Add a copy</a>
+      </div>
+      <div class="row">
+  
+
+        <% copies.forEach(function(copy){ %>
+        <div class="col-4 mb-2">
+          <div class="card p-2">
+            <div class="card-title">
+              <label>Copy ID: <output><%= copy.copyID %></output></a> </label>
+            </div>
+            <div class="card-text">
+              <div>
+                <label
+                  >Location: <output><%= copy.location %> </output>
+                </label>
+              </div>
+            
+            </div>
+            <!-- /.card-text -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-4 -->
+
+        <% }); %>
+      </div>
+      <!-- /.row -->
+
+      <%- include("./partials/footer.ejs") %>
+    </div>
+    <!-- /.container -->
+  </body>
+</html>

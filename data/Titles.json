@@ -1,0 +1,58 @@
+[
+    {
+      "titleID": 1,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "copies": [
+        {"copyID": 1, "location": "Shelf A", "isCheckedOut": false},
+        {"copyID": 2, "location": "Shelf B", "isCheckedOut": false},
+        {"copyID": 3, "location": "Shelf C", "isCheckedOut": false}
+      ]
+    },
+    {
+      "titleID": 2,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "copies": [
+        {"copyID": 4, "location": "Shelf D", "isCheckedOut": false},
+        {"copyID": 5, "location": "Shelf E", "isCheckedOut": false},
+        {"copyID": 6, "location": "Shelf F", "isCheckedOut": false}
+      ]
+    },
+    {
+      "titleID": 3,
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "copies": [
+        {"copyID": 7, "location": "Shelf G", "isCheckedOut": false},
+        {"copyID": 8, "location": "Shelf H", "isCheckedOut": false},
+        {"copyID": 9, "location": "Shelf I", "isCheckedOut": false}
+      ]
+    },
+    {
+      "titleID": 4,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "copies": [
+        {"copyID": 10, "location": "Shelf J", "isCheckedOut": false},
+        {"copyID": 11, "location": "Shelf K", "isCheckedOut": false},
+        {"copyID": 12, "location": "Shelf L", "isCheckedOut": false}
+      ]
+    },
+    {
+      "titleID": 5,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "copies": [
+        {"copyID": 13, "location": "Shelf M", "isCheckedOut": false},
+        {"copyID": 14, "location": "Shelf N", "isCheckedOut": false},
+        {"copyID": 15, "location": "Shelf O", "isCheckedOut": false}
+      ]
+    }
+  ]
+  

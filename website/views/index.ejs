@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Find books and their copies</title>
+    <%- include('./partials/css.ejs') %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include("./partials/navBar.ejs") %>
+      <h1>Find books and their copies</h1>
+
+      <%- include("./partials/errMsg.ejs") %>
+
+      <div class="mb-4">
+        <a href="/titles/create" class="btn btn-primary btn-sm">Add a Book</a>
+      </div>
+      <div class="row">
+  
+
+        <% titles.forEach(function(title){ %>
+        <div class="col-4 mb-2">
+          <div class="card p-2">
+            <div class="card-title">
+              <label>Book ID: <output><%= title.titleID %></output></a> </label>
+            </div>
+            <div class="card-text">
+              <div>
+                <label
+                  >Title: <output><%= title.title %> </output>
+                </label>
+              </div>
+              <div>
+                <label
+                  >Author: <output><%= title.author%></output>
+                </label>
+              </div>
+              <div>
+                <label
+                  >Genre: <output><%= title.genre %></output>
+                </label>
+              </div>
+
+              <div>
+                <a
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  href="/titles/<%= title.titleID %>/copies"
+                  >View copies</a
+                >
+                <a
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  href="/titles/<%= title.titleID %>/edit"
+                  >Edit</a
+                >
+                <a
+                  type="button"
+                  class="btn btn-outline-danger btn-sm"
+                  href="/titles/<%= title.titleID %>/delete"
+                  >Delete</a
+                >
+                
+              </div>
+            </div>
+            <!-- /.card-text -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-4 -->
+
+        <% }); %>
+      </div>
+      <!-- /.row -->
+
+      <%- include("./partials/footer.ejs") %>
+    </div>
+    <!-- /.container -->
+  </body>
+</html>

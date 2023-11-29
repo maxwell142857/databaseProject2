@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Title Edit</title>
+    <%- include('./partials/css.ejs') %>
+  </head>
+  <body>
+    <div class="container">
+      <%- include("./partials/navBar.ejs") %>
+      <h1>Create Title</h1>
+
+      <%- include("./partials/errMsg.ejs") %>
+
+
+
+      <form action="/titles/create" method="POST">
+        <div class="mb-3">
+          <label class="form-label">
+            Title
+            <input
+              type="text"
+              name="title"
+              class="form-control"
+            />
+          </label>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">
+            Author
+            <input
+              type="text"
+              name="author"
+              class="form-control"
+            />
+          </label>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">
+            Genre
+            <input
+              type="text"
+              name="genre"
+              class="form-control"
+            />
+          </label>
+        </div>
+        
+
+        <div>
+          <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+      </form>
+
+      <%- include("./partials/footer.ejs") %>
+    </div>
+    <!-- /.container -->
+  </body>
+</html>

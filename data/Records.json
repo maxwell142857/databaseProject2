@@ -1,0 +1,103 @@
+[
+    {
+      "recordID": 1,
+      "borrowTime": "2023-11-25T12:00:00Z",
+      "returnTime": "2023-12-01T14:00:00Z",
+      "returnDDL": "2023-12-05T23:59:59Z",
+      "comment": "Returned in good condition",
+      "student": {
+        "studentID": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "inBlackList": false
+      },
+      "admin": {
+        "adminID": 1,
+        "name": "Admin Name",
+        "email": "admin@example.com",
+        "schedule": "Monday to Friday, 9:00 AM - 5:00 PM"
+      },
+      "copyID": 1
+    },
+    {
+      "recordID": 2,
+      "borrowTime": "2023-11-26T13:00:00Z",
+      "returnTime": "2023-12-02T15:00:00Z",
+      "returnDDL": "2023-12-06T23:59:59Z",
+      "comment": "Late return with no damage",
+      "student": {
+        "studentID": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "inBlackList": false
+      },
+      "admin": {
+        "adminID": 2,
+        "name": "Another Admin",
+        "email": "admin2@example.com",
+        "schedule": "Tuesday to Saturday, 10:00 AM - 6:00 PM"
+      },
+      "copyID": 5
+    },
+    {
+      "recordID": 3,
+      "borrowTime": "2023-11-27T14:00:00Z",
+      "returnTime": "2023-12-03T16:00:00Z",
+      "returnDDL": "2023-12-07T23:59:59Z",
+      "comment": "Book was damaged upon return",
+      "student": {
+        "studentID": 3,
+        "name": "Bob Johnson",
+        "email": "bob@example.com",
+        "inBlackList": true
+      },
+      "admin": {
+        "adminID": 1,
+        "name": "Admin Name",
+        "email": "admin@example.com",
+        "schedule": "Monday to Friday, 9:00 AM - 5:00 PM"
+      },
+      "copyID": 10
+    },
+    {
+      "recordID": 4,
+      "borrowTime": "2023-11-28T15:00:00Z",
+      "returnTime": "2023-12-04T17:00:00Z",
+      "returnDDL": "2023-12-08T23:59:59Z",
+      "comment": "No issues with the book",
+      "student": {
+        "studentID": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "inBlackList": false
+      },
+      "admin": {
+        "adminID": 2,
+        "name": "Another Admin",
+        "email": "admin2@example.com",
+        "schedule": "Tuesday to Saturday, 10:00 AM - 6:00 PM"
+      },
+      "copyID": 14
+    },
+    {
+      "recordID": 5,
+      "borrowTime": "2023-11-29T16:00:00Z",
+      "returnTime": "2023-12-05T18:00:00Z",
+      "returnDDL": "2023-12-09T23:59:59Z",
+      "comment": "Book returned with some pages missing",
+      "student": {
+        "studentID": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "inBlackList": false
+      },
+      "admin": {
+        "adminID": 1,
+        "name": "Admin Name",
+        "email": "admin@example.com",
+        "schedule": "Monday to Friday, 9:00 AM - 5:00 PM"
+      },
+      "copyID": 3
+    }
+  ]
+  
